@@ -19,7 +19,7 @@ export default async (req, res) => {
           author: getGitHubIdFromAvatar(session.user.image),
         }),
       });
-      console.log(res)
+      console.log(res);
     }
   } else {
     // Not Signed in

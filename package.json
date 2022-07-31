@@ -7,6 +7,7 @@
     "autoprefixer": "^10.4.8",
     "css-loader": "^5.2.6",
     "dotenv": "^10.0.0",
+    "eslint": "^8.20.0",
     "firebase-admin": "^10.0.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
@@ -15,6 +16,7 @@
     "next-auth": "^4.3.2",
     "nookies": "^2.5.2",
     "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.18.0",
@@ -28,7 +30,12 @@
     "export": "next export",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint -d src -d pages --ext js --ext cjs --ext mjs --ext ts --ext tsx --max-warnings 0",
+    "__prettier": "prettier '*/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,html,md,css,json,yaml,yml}'",
+    "format": "npm run __prettier -- --write",
+    "format:check": "npm run __prettier -- --check"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -38,6 +45,7 @@
     "@storybook/react": "^6.2.9",
     "@types/react": "^17.0.8",
     "babel-loader": "^8.2.2",
+    "eslint-config-next": "12.2.3",
     "firebase": "^9.6.11",
     "typescript": "^4.6.3"
   }

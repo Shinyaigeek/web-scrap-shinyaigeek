@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
 import { useAuthUser } from "../../../hooks/useAuthUser/useAuthUser";
-import { Button } from '../Button/Button';
+import { Button } from "../Button/Button";
 
 export const Header: FunctionComponent = function () {
   const { user, login, logout } = useAuthUser();

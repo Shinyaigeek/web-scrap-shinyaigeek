@@ -14,7 +14,7 @@ interface Props {
   };
 }
 
-function Thread({ thread, }: Props) {
+function Thread({ thread }: Props) {
   const { title, slug, content } = thread;
   const [Form] = useBuildCommentForm(thread.id);
   return (
@@ -23,7 +23,9 @@ function Thread({ thread, }: Props) {
       <p>{content}</p>
 
       <h2>comments</h2>
-      {thread.comments.map((comment) => (<div>{comment.content}</div>))}
+      {thread.comments.map((comment) => (
+        <div>{comment.content}</div>
+      ))}
 
       <p>write comment</p>
       <Form />
