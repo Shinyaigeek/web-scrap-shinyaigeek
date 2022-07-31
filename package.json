@@ -8,6 +8,8 @@
     "css-loader": "^5.2.6",
     "dotenv": "^10.0.0",
     "firebase-admin": "^10.0.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^1.6.0",
     "next": "^12.1.5",
     "next-auth": "^4.3.2",
@@ -25,7 +27,8 @@
     "start": "next start",
     "export": "next export",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
