@@ -1,9 +1,9 @@
 import { AppPropsType } from "next/dist/next-server/lib/utils";
 import { VFC } from "react";
-import { Header } from "../components/ui/Header/Header";
+import { Header } from "../src/ui/components/ui/Header/Header";
 import { SessionProvider } from "next-auth/react";
 
-import "../styles/globals.css";
+import "../src/ui/styles/globals.css";
 
 const App: VFC<{
   Component: VFC<AppPropsType>;

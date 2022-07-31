@@ -1,4 +1,4 @@
-import { BuildThreads } from "../components/pages/BuildThreads/BuildThreads";
+import { BuildThreads } from "../src/ui/components/pages/BuildThreads/BuildThreads";
 
 interface Props {
   posts: {

@@ -1,4 +1,4 @@
-import { useBuildCommentForm } from "../../hooks/useBuildCommentForm/useBuildCommentForm";
+import { useBuildCommentForm } from "../../src/ui/hooks/useBuildCommentForm/useBuildCommentForm";
 interface Props {
   thread: {
     title: string;
